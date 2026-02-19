@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Task Manager Pro</h1>
+
+        <!-- Dark mode toggle -->
+        <button id="themeBtn">🌙 Dark Mode</button>
+
+        <!-- Search -->
+        <input id="searchBox" placeholder="Search tasks...">
+
+        <!-- Task input -->
+        <div class="inputs">
+            <input id="taskInput" placeholder="Enter task">
+            <input type="date" id="dueDate">
+            <select id="priority">
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
+            </select>
+        </div>
+
+        <!-- Action buttons -->
+        <button onclick="addTask()">Add Task</button>
+        <button onclick="toggleCalendar()">📅 Calendar View</button>
+
+        <!-- Progress -->
+        <div class="progress">
+            <div id="progressBar"></div>
+        </div>
+
+        <p id="stats"></p>
+
+        <!-- Task list -->
+        <ul id="taskList"></ul>
+
+        <!-- Calendar view -->
+        <div id="calendarView" style="display:none;"></div>
+    </div>
+
+    <!-- Script -->
+    <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
